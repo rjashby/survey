@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Survey</title>
+</head>
+<body>
+  <!-- Name, fav food, fav music, and any other info we like-->
+<div class="container">
+  <h1>Survey</h1>
+  <form id="survey-1">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input id="firstName" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input id="lastName" class="form-control" type="text">
+    </div>
+    <h2>Choose your favorite food:</h2>
+    <select class="form-control" id="favFood">
+      <option>Burritos</option>
+      <option>Pizza</option>
+      <option>Cookies</option>
+      <option>Tacos</option>
+    </select>
+    <br>
+    <h2>Choose your favorite type of music:</h2>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" value="rap/rock" checked>
+        Rap/Rock
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" value="punk">
+        Punk
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" value="ho-down">
+        Ho-down
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="born"><h2>Date of birth:</h2></label>
+      <input id="born" class="form-control" type="date">
+    </div>
+    <div class="form-group">
+      <label for="color"><h2>What is your favorite color?</h2></label>
+      <input id="color" class="form-control" type="color">
+    </div>
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+</div>
+<div id="output">
+
+  
+</div>
+</body>
+</html>
